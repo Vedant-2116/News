@@ -1,0 +1,110 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    height: 90vh;
+    width: 250px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    padding-top: 20px;
+    transition: margin-left 0.3s;
+}
+
+.sidebar:hover {
+    margin-left: 0;
+}
+
+.sidebar-header {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #61dafb;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    padding: 10px;
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-menu a:hover {
+    background-color: #61dafb;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+.content:hover {
+    margin-left: 0;
+}
+
+/* Font Awesome icons */
+.fa {
+    margin-right: 10px;
+}
+
+.user-dropdown {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.user-dropdown i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    color: black;
+    top: -20px; /* Position the dropdown above the user icon */
+}
+
+.user-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content p {
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #61dafb;
+}
